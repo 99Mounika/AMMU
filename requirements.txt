@@ -1,11 +1,11 @@
-gasgiref==3.2.10
+
 certifi==2020.6.20
 chardet==3.0.4
 colorama==0.4.3
 dj-database-url==0.5.0
 Django==3.0.8
 django-heroku==0.3.1
-gunicorn==20.0.4
+gunicorn==20.0.4git
 idna==2.7
 Pillow==7.2.0
 psycopg2==2.8.5
