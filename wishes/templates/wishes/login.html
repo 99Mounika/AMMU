@@ -1,0 +1,29 @@
+{% extends 'wishes/index.html' %}
+{% block content%}
+<br><br><br>
+    <div class="row">
+    	<div class="col-sm-4"></div>
+    	<div class="col-sm-4">
+    		<div class="card">
+    			<div class="card-header text-center text-primary">
+    				Login
+    			</div>
+    			<form action="{% url 'login' %}" method= "POST" >
+    				{% csrf_token %}
+                    <div class="content">
+    <label for="name">UserName: </label>
+    <input id="name" type="text" name="username" value="{{ username }}">
+            	<div class="user-icon"></div>
+        <label for="pwd">Password: </label>
+    <input id="pwd" type="password" name="password" value="{{ password }}">
+            <div class="pass-icon"></div>
+            	</div>
+    			<div class="card-body text-center">
+    				{{form.as_p}}
+    			</div>
+    			<div class="card-footer text-center"><button class="btn btn-primary ">SignUp</button></div>
+    			</form>
+    		</div>
+    	</div>
+    </div>
+{% endblock content%}
